@@ -1,7 +1,9 @@
 <template>
   <div class="planet-info">
     <div class="planet-image">
-      <img :src="getImage(planetImg)" />
+      <img :src="getImage(planetImg)" v-if="showOverview || showGeology" />
+      <img :src="getInternalImg(planetImg)" v-if="showStructure" />
+      <img :src="getGeology(planetImg)" class="geology" v-if="showGeology" />
     </div>
     <div class="planet-desc">
       <h2 class="name">{{ name }}</h2>
@@ -62,6 +64,14 @@ export default {
       let image = require(`../assets/images/${img}.svg`);
       return image;
     },
+    getInternalImg(img) {
+      let image = require(`../assets/images/${img}-internal.svg`);
+      return image;
+    },
+    getGeology(img) {
+      let image = require(`../assets/images/${img}-geology.png`);
+      return image;
+    },
     toggleOverview() {
       this.showOverview = true;
       this.showStructure = false;
@@ -99,6 +109,13 @@ export default {
 
 .planet-image img {
   height: 450px;
+}
+
+.planet-image .geology {
+  position: absolute;
+  right: 870px;
+  top: 500px;
+  height: 250px;
 }
 
 .planet-info .planet-desc {

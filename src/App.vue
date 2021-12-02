@@ -71,6 +71,13 @@
   text-decoration: none;
   color: #eee;
   opacity: 0.9;
+  border-bottom: none;
+  transition: border-bottom 0.3s ease;
+}
+
+#nav a:hover {
+  border-bottom: 1px solid grey;
+  opacity: 1;
 }
 
 #nav a.router-link-exact-active {
