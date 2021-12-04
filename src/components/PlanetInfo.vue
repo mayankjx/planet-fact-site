@@ -27,7 +27,7 @@
         @click="toggleOverview"
       >
         <p>01</p>
-        <p class="info-text">OVERVIEW</p>
+        <p class="info-text">OVERVIEw</p>
       </div>
       <div
         class="button-1"
