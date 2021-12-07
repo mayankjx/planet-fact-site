@@ -1,5 +1,7 @@
 # planet-fact-site
 
+![Screenshot](project-ss.png)
+
 Hello! This is my solution to Planets fact site - Frontend Mentor. This is my first project build with Vue JS.
 This is not the full solution as some components are missing. But it gives the idea of how to use components and there reusability. I didnt used any CSS libraries for styling so design at places is bit rough and not optimised for modifications.
 
@@ -17,9 +19,7 @@ Challenge
         See hover states for all interactive elements on the page
         View each planet page and toggle between "Overview", "Internal Structure", and "Surface Geology"
 
-
-   LIVE PREVIEW to see the hosted website here: https://planet-fact-site.netlify.app/
-   
+LIVE PREVIEW to see the hosted website here: https://planet-fact-site.netlify.app/
 
 Tech Stack
 
